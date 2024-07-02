@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1 ">
+        <title> Add your goal </title>    
+        <!-- Bootstrap core CSS -->
+         <link rel="stylesheet" href="{{url_for('static', filename='bootstrap.min.css')}}">
+    </head>
+    <body>
+        <br>
+        <br>
+        <div class="container">
+            <form action="/process" method="post">
+                <div class="form-group">
+                    <label for="Deadline"> Deadline for goal </label>
+                    <input type="text" id="goalsDeadline" name='Deadline' class="form-comtrol" placeholder="Add goal Deadline here "  >
+                </div>
+                <div class="form-group">
+                    <label for="goal">  goal </label>
+                    <textarea  id="thegoal" class="form-comtrol" rows="5" name='goal' placeholder="Add your goal  here " ></textarea>
+                </div>
+                <button class="btn btn-lg btn-primary btn-block" type="submit"> Submit Your Goal </button>
+            </form>
+        </div>    
+    </body>
+</html>
