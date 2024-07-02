@@ -4,7 +4,7 @@ import psycopg2
 
 app=Flask(__name__)
 #app.config['SQLALCHEMY_DATABASE_URI']='postgresql://postgres:deathnote12@localhost:5432/goalsdatabase' # configuration to connect to the data base 
-app.config['SQLALCHEMY_DATABASE_URI']='postgres://u9lnbdt2s3ls8j:pe739aa98ee6fa5207113555deb77f8aa3a01f192d432650160277dbb5eaf4b97@ccaml3dimis7eh.cluster-czz5s0kz4scl.eu-west-1.rds.amazonaws.com:5432/d80b7tbfvanmun'
+app.config['SQLALCHEMY_DATABASE_URI']='postgresql://u9lnbdt2s3ls8j:pe739aa98ee6fa5207113555deb77f8aa3a01f192d432650160277dbb5eaf4b97@ccaml3dimis7eh.cluster-czz5s0kz4scl.eu-west-1.rds.amazonaws.com:5432/d80b7tbfvanmun'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS']=False # take much resource better disable it 
 
 db=SQLAlchemy(app)
